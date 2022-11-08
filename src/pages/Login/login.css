@@ -1,0 +1,19 @@
+.login-form {
+  max-width: 300px;
+}
+.login-form-button {
+  width: 100%;
+  background-color: #E9D758;
+  color: #626364;
+}
+
+.login-form-forgot {
+    color: #E9D758;
+}
+
+.ant-input:focus {
+  border-color: #E9D758 ! important;
+  outline: 10 ! important;
+  -webkit-box-shadow: 0 0 0 2px #E9D758 ! important;
+  box-shadow: 0 0 0 2px #E9D758 ! important;
+}

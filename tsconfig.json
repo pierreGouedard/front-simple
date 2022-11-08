@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+      "plugins": [
+        {
+          "transform": "@formatjs/ts-transformer",
+          "import": "transform",
+          "type": "config",
+          "overrideIdFn": "[sha512:contenthash:base64:6]",
+          "ast": true
+        },
+      ],
+      "outDir": "./dist/",
+      "noImplicitAny": false,
+      "target": "es6",
+      "module": "esnext",
+      "lib": ["dom", "es2020", ],
+      "sourceMap": true,
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "node",
+      "declaration": true, // Generate corresponding .d.ts file
+      "resolveJsonModule": true, // Include modules imported with .json extension
+      "allowSyntheticDefaultImports": true,
+      "allowUmdGlobalAccess": true,
+      "incremental": true, // Enable incremental compilation by reading/writing information from prior compilations to a file on disk
+    },
+    "include": [
+        "./src", // *** The files TypeScript should type check ***
+    ],
+    "exclude": ["node_modules", "dist"], // *** The files to not type check ***
+    "extends": "./tsconfig.paths.json" // define alias
+
+}
