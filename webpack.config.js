@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require('webpack')
 
 // load env variable with dotenv
-require('dotenv').config({ path: `./${process.env.ENV_PATH || 'dev'}.env` }); 
+require('dotenv').config({ path: `./${process.env.ENV_PATH || 'envs/dev.env'}` }); 
 const port = process.env.PORT || 3000;
 const host = process.env.HOST || 'localhost'
 
@@ -65,7 +65,7 @@ module.exports = {
   devServer: {
     host: host,
     port: port,
-    open: true,
+    open: false,
     historyApiFallback: true
   }
 };

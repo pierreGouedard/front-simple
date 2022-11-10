@@ -29,7 +29,6 @@ interface IUser {
 export default class User {
   private static instance: User;
 
-
   /**
    * User's constructor is private to prevent direct
    * construction calls with the `new` operator.
