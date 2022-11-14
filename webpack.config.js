@@ -8,7 +8,6 @@ const webpack = require('webpack')
 require('dotenv').config({ path: `./${process.env.ENV_PATH || 'envs/dev.env'}` }); 
 const port = process.env.PORT || 3000;
 const host = process.env.HOST || 'localhost'
-
 publicPath = "/";
 
 module.exports = {

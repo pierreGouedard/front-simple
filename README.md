@@ -12,11 +12,10 @@ TODO
 npm run devwebpack
 ```
 
-/!\ Make sure there is a Postgres server & the authentication service running locally. In addition, make sure connection information in dev.env 
-are correct.  
+/!\ Make sure there is a Postgres server & the authentication service running locally. In addition, make sure connection information in dev.env are correct. /!\
 
 ### Run with docker
-**Step 1**: Create env file to use in dockerfile. /!\ No secret should be kept here.
+**Step 1**: Create env file to use in dockerfile. /!\ No secret should be kept here. /!\
 
 **Step 2**: Build Docker file:
 

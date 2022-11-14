@@ -1,5 +1,6 @@
-ARG FRONT_PORT
 FROM node:lts-alpine3.15 AS build
+  # Declare ARG
+  ARG FRONT_PORT
 
   # Enable bash
   RUN apk update && apk add bash 
@@ -19,7 +20,7 @@ FROM node:lts-alpine3.15 AS build
   #RUN npm run magic
   
   # Expose to local network
-  EXPOSE 3000
+  EXPOSE $FRONT_PORT
 
   # Dev entry point for now
   CMD ["npm", "run", "devwebpack"]
