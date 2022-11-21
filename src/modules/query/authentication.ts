@@ -49,14 +49,8 @@ export function login({
         user.setIsAuthenticated(true);
       }
     })
-    .catch(() => {
-      message.error(
-        window.intl.formatMessage({
-          id: "authenticationActions.login.error.message",
-          defaultMessage: "Invalid credentials",
-        }),
-        2,
-      );
+    .catch((error) => {
+      handleError(error);
       user.setIsAuthenticated(false);
     });
 }

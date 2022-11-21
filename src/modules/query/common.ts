@@ -80,7 +80,7 @@ export const handleError = (err: any, msg?: string) => {
 };
 
 // Function to display success message from response
-export const handleResponse = (res: AxiosResponse<any>, msg: string) => {
+export const handleResponse = (res: AxiosResponse<any>, msg?: string) => {
   const status = res?.status;
   const responseMessage = res.data?.msg || res.data?.message;
   if (typeof msg === "string") {

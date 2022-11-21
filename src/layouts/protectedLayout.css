@@ -1,0 +1,32 @@
+
+.protected_main_wrapper{
+  background-color: #282c34 ! important;
+}
+.protected-menu {
+    background-color: #282c34 ! important;
+}
+.protected-nav-item {
+  color: #E9D758 ! important;
+  background-color: #282c34 ! important;
+}
+.protected-nav-item:hover {
+  background-color: #626364 ! important;
+}
+.protected-header {
+  background-color: #282c34 ! important;
+}
+.ant-menu-item-selected::after {
+  border-bottom-width: 2px ! important;
+  border-bottom-style: solid ! important;
+  border-bottom-color: #626364 ! important;
+}
+.ant-menu-item-active::after {
+  border-bottom-width: 2px ! important;
+  border-bottom-style: solid ! important;
+  border-bottom-color: #626364 ! important;
+}
+.ant-menu-horizontal {
+  border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #626364 ! important;;
+}
